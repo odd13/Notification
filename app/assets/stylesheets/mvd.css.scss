@@ -1,0 +1,89 @@
+div#main
+{
+    position: absolute;
+    z-index: 0;
+    width: 1536px;
+    left: 0px;
+	top: 0px;
+	height: 100%;
+}
+div#rightside
+{
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    width: 390px;
+    right: 0px;
+	height: 100%;
+}
+
+div#leftMainTop
+{
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    width: 50%;
+    left: 0px;
+	height: 50%;
+  display: inline-block;
+}
+div#leftMainBottom
+{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 50%;
+    left: 0px;
+	height: 50%;
+  display: inline-block;
+}
+div#rightMainTop
+{
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    width: 50%;
+    right: 0px;
+	height: 50%;
+  display: inline-block;
+}
+
+div#rightMainBottom
+{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 50%;
+    right: 0px;
+	height: 50%;
+  display: inline-block;
+}
+div#footer
+{
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    width: 100%;
+    left: 0px;
+	height: 5px;
+}
+img#footer{
+  height: 5px;
+  width: auto;
+}
+iframe
+{
+	height: 100%;
+	width: 100%;
+}
+link {
+        height: 100%;
+        width: 100%;
+
+}
+ul#notification{
+  background: #ff2323;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}

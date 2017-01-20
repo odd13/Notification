@@ -1,0 +1,11 @@
+<%= form_for(@notification) do |i| %>
+  Title: <%= i.text_field :name, :class => 'form-control'  %>
+</br>
+  Description: <%= i.text_area :description, :class => 'form-control'%>
+  Initials: <%= i.text_field :loggedBy, :class => 'form-control'  %>
+  <%= i.submit 'Submit', :class => 'btn btn-danger' %>
+
+
+
+<% end %>
+

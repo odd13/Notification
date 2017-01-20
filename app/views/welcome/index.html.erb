@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Service Desk Dashboard</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <META http-equiv="refresh" content="300" />
+</head>
+<body>
+<div id="main">
+     <div id="leftMainTop">
+	<iframe name="leftMainTop" id="left" src="http://asmvd01/ReportServer/Pages/ReportViewer.aspx?/AutoTask/Helpdesk/Wallboards/DashboardServiceDesk_DEV&Dep=29807688&rs:Command=Render" frameborder="0" border="0" cellspacing="0" style="border-style: none;"></iframe>
+	</div>
+      <div id="rightMainTop">
+      	<iframe name="rightMainTop" id="right" src="http://asmvd01/ReportServer/Pages/ReportViewer.aspx?/AutoTask/Helpdesk/Wallboards/Project+Reports&rs:Command=Render" frameborder="0" border="0" cellspacing="0" style="border-style: none;"></iframe>
+	</div>
+
+      <div id="leftMainBottom">
+        <%= yield %>
+      </div>
+      <div id="rightMainBottom">
+      
+	</div>
+    </div>
+
+    <div id="rightside">
+    	<iframe name="right" id="right" src="http://asmvd01/ReportServer/Pages/ReportViewer.aspx?/AutoTask/Helpdesk/Wallboards/RightSide&rs:Command=Render" frameborder="0" border="0" cellspacing="0" style="border-style: none;"></iframe>
+    </div>
+
+    <div id="footer">
+    </div>
+
+</body>
+</html>

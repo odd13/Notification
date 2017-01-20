@@ -1,0 +1,25 @@
+<h1 align="center" class="display-4"> 
+<%= link_to raw('<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>'), "#{request.fullpath}/new" %>
+</h1>
+</br>
+
+<div class="list-group">
+<% @notifications.each do |t| %>
+	<a href="<%= edit_notification_path(t) %>" class="list-group-item list-group-item-action clearfix">
+
+        <h3 class="list-group-item-heading"><%= t.name %></h3>
+        <p class="list-group-item-text"><%= t.description %> :<%= t.loggedBy %></p>
+
+
+        <%= link_to notification_path(t), method: :delete, data: { confirm: "You sure?" }, :class=>'btn btn-xs btn-warning' do %>
+	<span class="pull-right">
+
+                <span class="glyphicon glyphicon-trash"></span>
+	</span>
+        <% end %>
+	
+	
+	</a>	
+<% end %>
+</div>
+
